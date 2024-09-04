@@ -1,13 +1,12 @@
-import Colors from '@/constants/Colors';
 import { useOAuth } from '@clerk/clerk-expo';
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import { View, StyleSheet, TextInput, Text, TouchableOpacity } from 'react-native';
 
 // https://github.com/clerkinc/clerk-expo-starter/blob/main/components/OAuth.tsx
-import { useWarmUpBrowser } from '@/hooks/useWarmUpBrowser';
+import { useWarmUpBrowser } from '../../hooks/useWarmUpBrowser';
 import { defaultStyles } from '@/constants/Styles';
-
+import { Colors } from '@/constants/Colors';
 enum Strategy {
   Google = 'oauth_google',
   Apple = 'oauth_apple',
