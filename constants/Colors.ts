@@ -15,13 +15,7 @@ export const Colors = {
     tabIconDefault: "#9BA1A6",
     tabIconSelected: "#fff",
   },
-  PrimaryColor: "#010848", // Tu color primario
-  SecondaryColor: "#002699", // Tu color secundario
-  CianColor: "#3689B4", // Celeste
-  WhiteColor: "#ffffff", // Blanco
-  BlackColor: "#000000", // Negro
-  TextColor: "hsl(206, 6%, 45%)", // Un tono más oscuro para el texto
-  GreyText: "#828282", // Un gris más oscuro para el texto secundario
-  GreenColor: "#28a745", // Verde para éxito o confirmación
-  RedColor: "#dc3545", // Rojo para advertencias o errores
+  primary: '#FF385C',
+  grey: '#5E5D5E',
+  black: '#1A1A1A',
 };
