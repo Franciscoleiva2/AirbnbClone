@@ -12,6 +12,10 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "extra": {
+      "googleClientId": "216131845114-n48e2hbfbqb7u1di6oog9ia7iq28doas.apps.googleusercontent.com",
+      "redirectUri": "https://auth.expo.io/viajate/FirsProject"
+    },
     "ios": {
       "supportsTablet": true
     },
