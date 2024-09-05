@@ -1,24 +1,20 @@
 import React from 'react';
 import { router, Slot, Stack } from 'expo-router';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { TouchableOpacity, ActivityIndicator, View } from 'react-native';
+import { TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useFonts } from 'expo-font';
 
 const RootLayout = () => {
   const [fontsLoaded] = useFonts({
+    
     pop: require('../assets/fonts/Poppins-Regular.ttf'),
     'pop-sb': require('../assets/fonts/Poppins-SemiBold.ttf'),
     'pop-b': require('../assets/fonts/Poppins-Bold.ttf'),
   });
 
   if (!fontsLoaded) {
-    // Mostrar un indicador de carga mientras las fuentes se cargan
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <ActivityIndicator size="large" color="#0000ff" />
-      </View>
-    );
+    return null; // Puede mostrar un indicador de carga mientras se cargan las fuentes
   }
 
   return (
@@ -30,7 +26,7 @@ const RootLayout = () => {
             presentation: 'modal',
             title: 'Log in or sign up',
             headerTitleStyle: {
-              fontFamily: 'pop-sb', // Asegúrate de que esta fuente esté correctamente configurada
+              fontFamily: 'pop-sb', // Cambia a 'mon-sb' o cualquier otra fuente según tu preferencia
             },
             headerLeft: () => (
               <TouchableOpacity onPress={() => router.back()}>
